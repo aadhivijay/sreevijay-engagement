@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sree & Vijay’s Engagement</title>
+  
+  <!-- Open Graph tags for nice WhatsApp link previews -->
+  <meta property="og:title" content="Sree & Vijay’s Engagement">
+  <meta property="og:description" content="Sunday, December 6, 2026 | Sengunthar Thirumana Mandapam, Tharamangalam, Salem">
+  <meta property="og:image" content="invite.png">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #fbf8ff 0%, #f3eafd 50%, #fff4f1 100%);
+      --primary: #72514d;        /* Warm mauve-brown from the card's typography */
+      --primary-hover: #5a3f3c;
+      --accent-purple: #8e6d9e;  /* Soft plum from the floral corners */
+      --surface: #ffffff;
+      --border: #e6d8f2;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg-gradient);
+      color: var(--primary);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 16px 36px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 520px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    /* Full-view Invitation Card Container */
+    .card-wrapper {
+      width: 100%;
+      background: var(--surface);
+      border-radius: 16px;
+      padding: 8px;
+      box-shadow: 0 12px 32px rgba(114, 81, 77, 0.12);
+      border: 1px solid var(--border);
+    }
+
+    .invitation-img {
+      width: 100%;
+      height: auto;
+      max-height: 82vh;
+      object-fit: contain;
+      display: block;
+      border-radius: 10px;
+    }
+
+    /* Action Buttons */
+    .actions {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 14px 20px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: none;
+      font-family: inherit;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(114, 81, 77, 0.2);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--primary-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background-color: var(--surface);
+      color: var(--primary);
+      border: 1.5px solid var(--border);
+      box-shadow: 0 2px 8px rgba(142, 109, 158, 0.08);
+    }
+
+    .btn-secondary:hover {
+      background-color: #fcf9ff;
+      border-color: var(--accent-purple);
+      transform: translateY(-1px);
+    }
+
+    .btn svg {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+
+    /* Calendar Row (Google + Apple/ICS) */
+    .calendar-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      width: 100%;
+    }
+
+    @media (max-width: 400px) {
+      .calendar-group {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <!-- 1. Full View Invitation Image -->
+    <div class="card-wrapper">
+      <img 
+        src="invite.png" 
+        alt="Sree & Vijay’s Engagement Invitation" 
+        class="invitation-img"
+      >
+    </div>
+
+    <!-- 2. Three Action Options -->
+    <div class="actions">
+      
+      <!-- Option 3: Location Link -->
+      <a 
+        href="https://maps.app.goo.gl/1dQ3vXfJRUGxReED8" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="btn btn-primary"
+      >
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+        </svg>
+        View Venue on Google Maps
+      </a>
+
+      <!-- Option 2: Save Calendar Invite (Google Calendar + .ics file with 1-day reminder) -->
+      <div class="calendar-group">
+        <a 
+          href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Sree+%26+Vijay%E2%80%99s+Engagement&dates=20261206T003000Z/20261206T083000Z&details=Please+join+us+for+the+Engagement+Ceremony+of+Sree+and+Vijay.%0A%0AVenue:+Sengunthar+Thirumana+Mandapam,+Tharamangalam,+Salem+636502%0ALocation:+https://maps.app.goo.gl/1dQ3vXfJRUGxReED8&location=Sengunthar+Thirumana+Mandapam,+Tharamangalam,+Salem+636502" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn btn-secondary"
+        >
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          Google Calendar
+        </a>
+
+        <button onclick="downloadICS()" class="btn btn-secondary">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          Apple / Outlook (.ics)
+        </button>
+      </div>
+
+      <!-- Option 1: Download Invitation Image -->
+      <a 
+        href="invite.png" 
+        download="Sree-and-Vijay-Engagement-Invitation.png" 
+        class="btn btn-secondary"
+      >
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+        </svg>
+        Download Invitation Card
+      </a>
+
+    </div>
+  </main>
+
+  <script>
+    // Generates and downloads a standard .ics calendar invite with a 1-day prior reminder
+    function downloadICS() {
+      const icsContent = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "PRODID:-//Sree and Vijay Engagement//EN",
+        "CALSCALE:GREGORIAN",
+        "METHOD:PUBLISH",
+        "BEGIN:VEVENT",
+        "UID:sree-vijay-engagement-20261206@github.io",
+        "SUMMARY:Sree & Vijay’s Engagement",
+        "DTSTAMP:20261114T000000Z",
+        "DTSTART:20261206T003000Z",
+        "DTEND:20261206T083000Z",
+        "DESCRIPTION:Please join us for the Engagement Ceremony of Sree and Vijay.\\n\\nGoogle Maps: https://maps.app.goo.gl/1dQ3vXfJRUGxReED8",
+        "LOCATION:Sengunthar Thirumana Mandapam\\, Tharamangalam\\, Salem 636 502",
+        "STATUS:CONFIRMED",
+        "BEGIN:VALARM",
+        "TRIGGER:-P1D",
+        "ACTION:DISPLAY",
+        "DESCRIPTION:Reminder: Sree & Vijay’s Engagement is tomorrow at 6:00 AM",
+        "END:VALARM",
+        "END:VEVENT",
+        "END:VCALENDAR"
+      ].join("\r\n");
+
+      const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.setAttribute("download", "Sree-Vijay-Engagement.ics");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+
+</body>
+</html>
